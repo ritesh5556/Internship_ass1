@@ -15,7 +15,7 @@ function App() {
  
 
   return (
-    <div className="w-screen h-screen bg-richblack-900 flex flex-col">
+    <div className=" w-screen h-screen bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 flex flex-col">
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
 
       <Routes>

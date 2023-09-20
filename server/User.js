@@ -1,4 +1,3 @@
-// User.js (create this file in your server folder)
 const mongoose = require('mongoose');
 
 
@@ -7,6 +6,7 @@ const userSchema = new mongoose.Schema({
   lastName: String,
   email: String,
   password: String,
+  userName: String,
   
 });
 

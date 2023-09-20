@@ -29,11 +29,12 @@ const Navbar = (props) => {
             </ul>
         </nav>
 
-        {/* Login - SignUp - LogOut - Dashboard */}
+        {}
         <div className='flex items-center gap-x-4'>
             { !isLoggedIn &&
                 <Link to="/login">
-                    <button className='bg-richblack-800 text-richblack-100 py-[8px] 
+                    <button className='bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500
+                     text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition duration-300 text-richblack-100 py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Log in
                     </button>
@@ -41,7 +42,8 @@ const Navbar = (props) => {
             }
             { !isLoggedIn &&
                 <Link to="/signup">
-                    <button  className='bg-richblack-800 text-richblack-100 py-[8px] 
+                    <button  className='bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 text-white font-semibold px-6 py-3 rounded-lg 
+                    shadow-md hover:shadow-lg transition duration-300 text-richblack-100 py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Sign up
                     </button>
@@ -53,7 +55,8 @@ const Navbar = (props) => {
                         setIsLoggedIn(false);
                         toast.success("Logged Out");
                     }}
-                    className='bg-richblack-800 text-richblack-100 py-[8px] 
+                    className='bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg
+                     transition duration-300 text-richblack-100 py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Log Out
                     </button>
@@ -62,22 +65,14 @@ const Navbar = (props) => {
             { isLoggedIn &&
                 <Link to="/dashboard">
                     <button
-                     className='bg-richblack-800 text-richblack-100 py-[8px] 
+                     className='bg-gradient-to-tr from-pink-500 via-purple-500 to-blue-500 hover:from-blue-500 hover:via-purple-500 hover:to-pink-500 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg
+                      transition duration-300 text-richblack-100 py-[8px] 
                     px-[12px] rounded-[8px] border border-richblack-700'>
                         Dashboard
                     </button>
                 </Link>
             }
-            { !isLoggedIn &&
-                <Link to="/expert">
-                    <button
-                        className='bg-richblack-800 text-richblack-100 py-[8px]
-                        px-[12px] rounded-[8px] border border-richblack-700'>
-                        Expert
-                    </button>
-                </Link>
-
-            }
+         
         </div>
       
     </div>
